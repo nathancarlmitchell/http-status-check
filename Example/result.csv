@@ -1,0 +1,125 @@
+Domain,HTTP Code,Description,Protocol Version,Server,Redirect Location
+www.adipec.com	,301,Moved Permanently,1.1,,https://www.adipec.com/
+www.ads.google.com	,301,Moved Permanently,1.1,ESF,https://www.ads.google.com/
+www.adwords.google.com	,else,The operation has timed out.
+www.apis.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www.appengine.google.com	,302,Found,1.1,Google Frontend,https://www.appengine.google.com/
+www.baloise.ch	,else,The operation has timed out.
+www.blogsearch.google.com	,301,Moved Permanently,1.1,gws,http://www.google.com/
+www.books.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www.buzz.google.com	,else,The remote server returned an error: (404) Not Found.
+www.catalogs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www.classroom.google.com	,301,Moved Permanently,1.1,sffe,https://classroom.google.com/
+www.client-katemorrisonphotography.com	,else,The operation has timed out.
+www.clubmed.com	.sg,else,Invalid URI: The hostname could not be parsed.
+www.code.google.com	,else,The operation has timed out.
+www.corp.google.com	,302,Found,1.1,,https://moma.corp.google.com/
+www.docs.google.com	,else,The operation has timed out.
+www.dominodisplay.com	,else,The operation has timed out.
+www.drive.google.com	,301,Moved Permanently,1.1,ESF,https://www.drive.google.com/
+www.earth.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www.fedex.com	,301,Moved Permanently,1.1,Apache,https://www.fedex.com/global/choose-location.html
+www.fiber.google.com	,301,Moved Permanently,1.1,Google Frontend,https://www.fiber.google.com/
+www.froogle.google.com	,301,Moved Permanently,1.1,sffe,https://www.google.com/shopping
+www.futurefinancelive.co.uk	,else,The operation has timed out.
+www.gam.com	,else,The operation has timed out.
+www.glocomms.com	,else,The operation has timed out.
+www.gmail.google.com	,else,The operation has timed out.
+www.google.com	,200,OK,1.1,gws,
+www.google.de	,200,OK,1.1,gws,
+www.groups.google.com	,301,Moved Permanently,1.1,GSE,http://groups.google.com/d/homeredir
+www.icontact.com	,301,Moved Permanently,1.1,Apache/2.4.7 (Ubuntu),https://www.icontact.com/
+www.ihg.com	,301,Moved Permanently,1.1,AkamaiGHost,https://www.ihg.com/hotels/us/en/reservation
+www.ihgrewardsclub.com	,301,Moved Permanently,1.1,AkamaiGHost,https://www.ihg.com/rewardsclub/content/us/en/home
+www.image.google.com	,301,Moved Permanently,1.1,gws,http://images.google.com/
+www.images.google.com	,301,Moved Permanently,1.1,gws,http://images.google.com/
+www.keep.google.com	,301,Moved Permanently,1.1,sffe,https://keep.google.com/
+www.l.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www.larrywildermusic.com	www.plus.google.com,else,Invalid URI: The hostname could not be parsed.
+www.local.google.com	,302,Found,1.1,sffe,http://maps.google.com/
+www.lucidchart.com	,301,Moved Permanently,1.1,,https://www.lucidchart.com/
+www.morganstanley.com	,307,Temporary Redirect,1.1,AkamaiGHost,https://www.morganstanley.com/
+www.myvitibox.co.uk	,else,The operation has timed out.
+www.nb.com	,301,Moved Permanently,1.1,Microsoft-IIS/10.0,https://www.nb.com/
+www.news.google.com	,301,Moved Permanently,1.1,sffe,http://news.google.com/
+www.nsctotal.com	.br,else,Invalid URI: The hostname could not be parsed.
+www.phaidoninternational.com	,else,The operation has timed out.
+www.photos.google.com	,301,Moved Permanently,1.1,sffe,https://photos.google.com/
+www.picasa.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www.plus.google.com	,301,Moved Permanently,1.1,sffe,https://plus.google.com/
+www.plus.sandbox.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www.plus.url.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www.print.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www.profileasia.com	,301,Moved Permanently,1.1,,https://www.profileasia.com/
+www.pub-5215265889741227.afd.ghs.google.com	,else,Web Page Blocked
+www.pub-8081043417847482.afd.ghs.google.com	,else,Web Page Blocked
+www.research.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www.scholar.google.com	,else,The operation has timed out.
+www.selta.sites.google.com	,302,Moved Temporarily,1.1,GSE,https://www.selta.sites.google.com/
+www.sendw9.com	,301,Moved Permanently,1.1,cloudflare,https://www.sendw9.com/
+www.sites.google.com	,302,Moved Temporarily,1.1,GSE,https://www.sites.google.com/
+www.spreadsheet.google.com	,301,Moved Permanently,1.1,GSE,https://www.spreadsheet.google.com/
+www.spreadsheets.google.com	,301,Moved Permanently,1.1,GSE,https://www.spreadsheets.google.com/
+www.support.google.com	,301,Moved Permanently,1.1,support-content-ui,https://support.google.com/
+www.talk.google.com	,301,Moved Permanently,1.1,,https://hangouts.google.com/
+www.task-tools.com	,else,The operation has timed out.
+www.thewanderingfireman.plus.google.com	,301,Moved Permanently,1.1,ESF,https://www.thewanderingfireman.plus.google.com/
+www.ticketsatwork.com	,301,Moved Permanently,1.0,BigIP,https://www.ticketsatwork.com/
+www.tiroler-kraeuterhof.com	,else,The operation has timed out.
+www.toolbar.google.com	,301,Moved Permanently,1.1,sffe,http://toolbar.google.com/
+www.unusportugal.sites.google.com	,302,Moved Temporarily,1.1,GSE,https://www.unusportugal.sites.google.com/
+www.video.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www.vw70om.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www.www.sites.google.com	,302,Moved Temporarily,1.1,GSE,https://www.www.sites.google.com/
+www1.google.com	,else,The remote name could not be resolved: 'www1.google.com'
+www1.plus.sandbox.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www10.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www2.l.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www2.plus.sandbox.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www2.sandbox.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www3.l.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www4.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www4.l.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www5.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www5.l.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www9.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www-cctld.l.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+wwwe.sites.google.com	,302,Moved Temporarily,1.1,GSE,https://wwwe.sites.google.com/
+www-google-analytics.l.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+www-googleapis-test.sandbox.google.com	,else,The remote server returned an error: (404) Not Found.
+www-googletagmanager.l.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+wwww.docs.google.com	,301,Moved Permanently,1.1,ESF,https://wwww.docs.google.com/
+wwww.plus.google.com	,301,Moved Permanently,1.1,ESF,https://wwww.plus.google.com/
+wwww.sites.google.com	,302,Moved Temporarily,1.1,GSE,https://wwww.sites.google.com/
+www-wide.l.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+wx94f8.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+wxca6n.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+wz5cfc.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+x1zek5.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+x20web.corp.google.com	,302,Found,1.1,,https://x20web.corp.google.com/
+x20web-public.corp.google.com	,302,Found,1.1,,https://x20web-public.corp.google.com/
+x294s7.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+x32amg.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+x3xsof.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+x45kst.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+x471gy.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+x4leag.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+x4mfj8.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+x80hsk.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+x8m3yh.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+x9m9vs.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+x9tdx7.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+xbcmdo.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+xbmsww.corp.google.com	,302,Found,1.1,,https://xbmsww.corp.google.com/
+xdyvyu.feedproxy.ghs.google.com	,else,The operation has timed out.
+x-epdm-app.mtv.corp.google.com	,else,The remote name could not be resolved: 'x-epdm-app.mtv.corp.google.com'
+xgzjtg.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+xk0ymb.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+xk4q43.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+xkrvan.feedproxy.ghs.google.com	,else,404. That’s an error. The requested URL / was not found on this server. That’s all we know.
+xmpp.l.google.com	,301,Moved Permanently,1.1,,https://hangouts.google.com/
+xmpp-server.l.google.com	,301,Moved Permanently,1.1,,https://hangouts.google.com/
+xmpp-server1.l.google.com	,301,Moved Permanently,1.1,,https://hangouts.google.com/
+xmpp-server2.l.google.com	,301,Moved Permanently,1.1,,https://hangouts.google.com/
+xmpp-server3.l.google.com	,301,Moved Permanently,1.1,,https://hangouts.google.com/
+xmpp-server4.l.google.com	,301,Moved Permanently,1.1,,https://hangouts.google.com/
