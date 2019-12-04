@@ -1,21 +1,24 @@
-﻿[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-$path = "C:\Users\nathan.mitchell\Documents\Spider\transportation.ky.gov\"
-$file = 'transportation.ky.gov.docs.txt'
-$resultfile
-$totalURL = Get-content -Path $path$file | Measure-Object –Line
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+$path = "C:\Users\Owner\Downloads\Spider-master\Spider-master\"
+$file = 'sub.ky.txt'
+$resultfile = 'http.result.csv'
 $count = 0
+$timeout = 1
 
-Set-Content -Path $path$resultfile -Value 'Domain,HTTP Code,Description,Protocol Version,Server,Redirect Location'
+if (![System.IO.File]::Exists($path + $resultfile)) {
+	New-Item -Path $path -Name $resultfile
+}
 
 foreach($url in [System.IO.File]::ReadLines($path+$file)) {
     try {
-        $request = Invoke-WebRequest $url -MaximumRedirection 0 -ErrorAction Ignore -TimeoutSec 1
+        $request = Invoke-WebRequest $url -MaximumRedirection 0 -ErrorAction Ignore -TimeoutSec $timeout -UseBasicParsing
         $result = $url + ',' + $request.StatusCode + ',' + $request.StatusDescription + ',' + $request.BaseResponse.ProtocolVersion.Major + '.' + $request.BaseResponse.ProtocolVersion.Minor + ',' + $request.BaseResponse.Server + ',' +$request.Headers.Location
     } catch {
-        if ((($_ -split '\n')[0]).Contains("401") -or (($_ -split '\n')[0]).Contains("Unauthorized")) {
+        if ((($_ -split '\n')[0]).Contains("Bad Request")) {
+            $result = $url + ',400,' + ($_ -split '\n')[0]
+        } elseif ((($_ -split '\n')[0]).Contains("401") -or (($_ -split '\n')[0]).Contains("Unauthorized")) {
             $result = $url + ',401,' + ($_ -split '\n')[0]
         } elseif ((($_ -split '\n')[0]).Contains("Forbidden") -or (($_ -split '\n')[0]).Contains("You do not have permission")) {
-          # -or (($_ -split '\n')[1]).Contains("403")
             $result = $url + ',403,' + ($_ -split '\n')[0]
         } elseif ((($_ -split '\n')[0]).Contains("404") -or (($_ -split '\n')[0]).Contains("Not Found") -or (($_ -split '\n')[0]).Contains("not found") -or (($_ -split '\n')[0]).Contains("could be found") -or (($_ -split '\n')[0]).Contains("The resource you are looking for has been removed")) {
             $result = $url + ',404,' + ($_ -split '\n')[4]
@@ -33,4 +36,11 @@ foreach($url in [System.IO.File]::ReadLines($path+$file)) {
     $count++
     $count 
     $result
+}
+
+$content = Get-Content -Path $path$resultfile | Sort-Object | Get-Unique
+Clear-Content -Path $path$resultfile
+Set-Content -Path $path$resultfile -Value 'Domain,HTTP Code,Description,Protocol Version,Server,Redirect Location'
+foreach ($c in $content) {
+    Add-Content -Path $path$resultfile -Value $c
 }
