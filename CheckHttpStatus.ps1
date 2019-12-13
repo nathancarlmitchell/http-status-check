@@ -5,9 +5,6 @@ $resultfile = 'http.result.csv'
 $count = 0
 $timeout = 7
 
-$urls = Get-Content -path $path$file
-$urlCount = $urls.Count
-
 if (![System.IO.File]::Exists($path + $resultfile)) {
     New-Item -Path $path -Name $resultfile
 }
@@ -15,24 +12,27 @@ else {
     Clear-Content -Path $path$resultfile
 }
 
-foreach ($url in [System.IO.File]::ReadLines($path + $file)) {
+$urls = (Get-Content -path $path$file).ToLower().Replace('www.','') | Sort-Object | Get-Unique
+$urlCount = $urls.Count
+
+foreach ($url in $urls) {
     try {
         $request = Invoke-WebRequest $url -ErrorAction Ignore -TimeoutSec $timeout -UseBasicParsing #-MaximumRedirection 0
         $result = $url + ',' + $request.StatusCode + ',' + $request.StatusDescription + ',' + $request.BaseResponse.ProtocolVersion.Major + `
             '.' + $request.BaseResponse.ProtocolVersion.Minor + ',' + $request.BaseResponse.Server + ',' + $request.BaseResponse.ResponseUri.AbsoluteURI + ',' + $request.BaseResponse.ResponseUri.Host
     }
     catch {
+        
+        $e = ($_ -split '\n')[0]
+
         if ((($_ -split '\n')[0]).Contains("Bad Request")) {
             $http = 400
-            $e = ($_ -split '\n')[0]
         }
         elseif ((($_ -split '\n')[0]).Contains("401") -or (($_ -split '\n')[0]).Contains("Unauthorized")) {
             $http = 401
-            $e = ($_ -split '\n')[0]
         }
         elseif ((($_ -split '\n')[0]).Contains("Forbidden") -or (($_ -split '\n')[0]).Contains("You do not have permission")) {
             $http = 403
-            $e = ($_ -split '\n')[0]
         }
         elseif ((($_ -split '\n')[0]).Contains("404") -or (($_ -split '\n')[0]).Contains("Not Found") -or (($_ -split '\n')[0]).Contains("not found") `
                 -or (($_ -split '\n')[0]).Contains("could be found") -or (($_ -split '\n')[0]).Contains("The resource you are looking for has been removed")) {
@@ -41,19 +41,15 @@ foreach ($url in [System.IO.File]::ReadLines($path + $file)) {
         }
         elseif ((($_ -split '\n')[0]).Contains("Unable to connect to the remote server") -or (($_ -split '\n')[0]).Contains("The operation has timed out.")) {       
             $http = 408
-            $e = ($_ -split '\n')[0]
         }
         elseif ((($_ -split '\n')[0]).Contains("Server Error")) {        
             $http = 500
-            $e = ($_ -split '\n')[0] 
         }
         elseif ((($_ -split '\n')[0]).Contains("Service Unavailable")) {        
             $http = 503
-            $e = ($_ -split '\n')[0] 
         }
         else {
             $http = ''
-            $e = ($_ -split '\n')[0]
         }
         $result = $url + ',' + $http + ',' + $e
     }
